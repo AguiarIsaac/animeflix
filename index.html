@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>AnimeFlix</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="./style/owl/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="./style/owl/owl.theme.default.min.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h2 class="logo">AnimeFlix</h2>
+			<nav>
+				<a href="#">Início</a>
+				<a href="#">Séries</a>
+				<a href="#">Filmes</a>
+				<a href="#">Documentários</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="anime_principal">
+			<div class="container">
+				<h3 class="titulo">One Piece</h3>
+				<p class="descricao">Eu serei o Rei dos Piratas! Monkey D. Luffy e sua tripulação de Piratas do Chapéu de Palha
+					embarcam em uma jornada incrível para encontrar um tesouro lendário, o One Piece.</p>
+
+				<div class="btns">
+					<button role="button" class="btn" id="id_play">
+						<i class="fas fa-play"></i>
+						ASSISTIR AGORA
+					</button>
+					<button role="button" class="btn" id="id_info">
+						<i class="fas fa-info-circle"></i>
+						MAIS INFORMAÇÔES
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="carrosel-filmes">
+		<div class="owl-carousel owl-theme">
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sczMGADpcg5ryQNSIlncJnpqVAv.jpg" alt="dragon ball">
+			</div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1QXGWJ0bsmbMUDBXXfS1RnFadkS.jpg" alt="bleach"></div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1XnZJZ6QDxgaVbnsGpNrBi13JfI.jpg"
+					alt="atack of titon"></div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pTznFrSM4katqhkdOGNwUqVvvl8.jpg"
+					alt="high score girl"></div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Uj6vqmznWQ3w3hpQ1eIY9mMyMw.jpg" alt="Demon Slayer">
+			</div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/a8BknzvFVK5EZ83rKg1a83iwaj0.jpg" alt="One punch man">
+			</div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/726CoIcNtWJJuxSyuRLjZkJwGrT.jpg"
+					alt="full metal alchemist"></div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kmFw6PwdQzmMBIma1f3HbyXSD1H.jpg" alt="ghost"></div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fJ0Jy7NNdqIuYcYNqeK7YJHVLL0.jpg"
+					alt="sete pecados capitais"></div>
+			<div class="item"><img class="box-filme"
+					src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hfTEDISVpFMqmp6uOGylsSakyXZ.jpg" alt="fate zero">
+			</div>
+
+		</div>
+	</div>
+
+	<!--MODAL-->
+
+	<div id="myModal_trailer" class="modal_trailer">
+		<div class="modal_content">
+			<div class="close_modal"><a href="#" id="exit_modal"><i class="fas fa-times"></i></a></div>
+			<div id="video"></div>
+		</div>
+	</div>
+
+	<div id="myModal_info" class="modal_info">
+		<div class="modal_content_info">
+			<div class="close_modal"><a href="#" id="exit_modal_info"><i class="fas fa-times exit_modal"></i></a></div>
+			<div class="banner_info">
+				<img src="https://www.themoviedb.org/t/p/original/vykRJ81Wqn9mGWAGUWVB2kOlTST.jpg" alt="one piece">
+			</div>
+			<div class="btn_info">
+				<div class="btn_g1">
+					<button class="assistir btn">Assistir</button>
+					<a href="#" id="add_list"><i class="fas fa-plus-circle info_btn"></i></a>
+					<a href="#" id="liked"><i class="fas fa-thumbs-up info_btn"></i></a>
+					<a href="#" id="desliked"><i class="fas fa-thumbs-down info_btn"></i></a>
+				</div>
+				<div class="btn_g2">
+					<a href="#" id="mute"><i class="fas fa-volume-up info_btn"></i></a>
+				</div>
+			</div>
+			<div class="modal_titles">
+				<div class="modal_subtitles">
+					<div id="porcentagem" class="subtitles">
+						<p><strong>99% Relevante</strong></p>
+					</div>
+					<div id="ano" class="subtitles">
+						<p>1999</p>
+					</div>
+					<div id="clasificacao" class="subtitles">
+						<p>10</p>
+					</div>
+					<div id="temps" class="subtitles">
+						<p> 10 Temporadas</p>
+					</div>
+					<div id="qualidade" class="subtitles">
+						<p>HD</p>
+					</div>
+				</div>
+				<div class="modal_elenco">
+					<p><strong>Elenco: </strong>Monkey D. Luffy, Roronoa Zoro, Nami, Usoop, Chopper, Sanji, Brooks, Franky</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/owl/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/owl/owl.carousel.min.js"></script>
+	<script src="js/owl/setup.js"></script>
+	<script src="https://kit.fontawesome.com/af32647357.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
